@@ -1,0 +1,122 @@
+:host {
+  align-items: center;
+  margin: 0 0 3em 3em;
+  position: relative;
+  width: calc(50% - 3em);
+}
+
+article {
+  display: flex;
+}
+
+article .icon {
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: block;
+  height: 10em;
+  line-height: 10em;
+  margin: 0 2em 0 0;
+  text-align: center;
+  width: 10em;
+}
+
+article .icon:before {
+  color: #f56a6a;
+  font-size: 2.75rem;
+  position: relative;
+  top: 0.05em;
+}
+
+article .icon:after {
+  transform: rotate(45deg);
+  border-radius: 0.25rem;
+  border: solid 2px rgba(210, 215, 217, 0.75);
+  content: '';
+  display: block;
+  height: 7em;
+  left: 50%;
+  margin: -3.5em 0 0 -3.5em;
+  position: absolute;
+  top: 50%;
+  width: 7em;
+}
+
+article .content {
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+article .content > :last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 980px) {
+
+  article {
+    margin: 0 0 3em 0;
+    width: 100%;
+  }
+
+  article:nth-child(2n - 1) {
+    margin-right: 0;
+  }
+
+  article:nth-child(2n) {
+    margin-left: 0;
+  }
+
+  article:nth-last-child(1), article:nth-last-child(2) {
+    margin-bottom: 3em;
+  }
+
+  article:last-child {
+    margin-bottom: 0;
+  }
+
+  article .icon {
+    height: 8em;
+    line-height: 8em;
+    width: 8em;
+  }
+
+  article .icon:before {
+    font-size: 2.25rem;
+  }
+
+  article .icon:after {
+    height: 6em;
+    margin: -3em 0 0 -3em;
+    width: 6em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  article {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  article .icon {
+    height: 6em;
+    line-height: 6em;
+    margin: 0 0 1.5em 0;
+    width: 6em;
+  }
+
+  article .icon:before {
+    font-size: 1.5rem;
+  }
+
+  article .icon:after {
+    height: 4em;
+    margin: -2em 0 0 -2em;
+    width: 4em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  article .icon:before {
+    font-size: 1.25rem;
+  }
+}
