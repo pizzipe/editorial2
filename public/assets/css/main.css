@@ -2711,21 +2711,21 @@ button:disabled,
   max-width: 110em;
 }
 
-#main > .inner > section {
+#main > .inner > app-home > section {
   padding: 6em 0 4em 0;
   border-top: solid 2px rgba(210, 215, 217, 0.75);
 }
 
-#main > .inner > section:first-of-type {
-  border-top: 0 !important;
-}
+/*#main > .inner > section:first-of-type {*/
+/*  border-top: 0 !important;*/
+/*}*/
 
 @media screen and (max-width: 1680px) {
   #main > .inner {
     padding: 0 5em 0.1em 5em;
   }
 
-  #main > .inner > section {
+  #main > .inner > app-home > section {
     padding: 5em 0 3em 0;
   }
 }
@@ -2735,7 +2735,7 @@ button:disabled,
     padding: 0 4em 0.1em 4em;
   }
 
-  #main > .inner > section {
+  #main > .inner > app-home > section {
     padding: 4em 0 2em 0;
   }
 }
@@ -2745,7 +2745,7 @@ button:disabled,
     padding: 0 2em 0.1em 2em;
   }
 
-  #main > .inner > section {
+  #main > .inner > app-home > section {
     padding: 3em 0 1em 0;
   }
 }
