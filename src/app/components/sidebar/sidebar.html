@@ -1,4 +1,4 @@
-<div id="sidebar" [class.inactive]="isSidebarInactive()">
+<div id="sidebar" [class.inactive]="isInactive()">
   <div class="inner">
 
     <!-- Search -->
@@ -91,5 +91,5 @@
 
   </div>
 
-  <a href="#" class="toggle" (click)="toggleSidebar($event)">Toggle</a>
+  <a href="#" class="toggle" (click)="toggle($event)">Toggle</a>
 </div>
