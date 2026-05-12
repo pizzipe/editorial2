@@ -177,8 +177,8 @@ setTimeout(function () {
 				var sh, wh, st;
 
 				// Reset scroll position to 0 if it's 1.
-					if ($window.scrollTop() == 1)
-						$window.scrollTop(0);
+				// 	if ($window.scrollTop() == 1)
+				// 		$window.scrollTop(0);
 
 				$window
 					.on('scroll.sidebar-lock', function() {
@@ -188,54 +188,54 @@ setTimeout(function () {
 						// <=large? Bail.
 							if (breakpoints.active('<=large')) {
 
-								$sidebar_inner
-									.data('locked', 0)
-									.css('position', '')
-									.css('top', '');
-
-								return;
-
-							}
-
-						// Calculate positions.
-							x = Math.max(sh - wh, 0);
-							y = Math.max(0, $window.scrollTop() - x);
-
-						// Lock/unlock.
-							if ($sidebar_inner.data('locked') == 1) {
-
-								if (y <= 0)
-									$sidebar_inner
-										.data('locked', 0)
-										.css('position', '')
-										.css('top', '');
-								else
-									$sidebar_inner
-										.css('top', -1 * x);
+								// $sidebar_inner
+								// 	.data('locked', 0)
+								// 	.css('position', '')
+								// 	.css('top', '');
+                //
+								// return;
 
 							}
-							else {
 
-								if (y > 0)
-									$sidebar_inner
-										.data('locked', 1)
-										.css('position', 'fixed')
-										.css('top', -1 * x);
-
-							}
+						// // Calculate positions.
+						// 	x = Math.max(sh - wh, 0);
+						// 	y = Math.max(0, $window.scrollTop() - x);
+            //
+						// // Lock/unlock.
+						// 	if ($sidebar_inner.data('locked') == 1) {
+            //
+						// 		if (y <= 0)
+						// 			$sidebar_inner
+						// 				.data('locked', 0)
+						// 				.css('position', '')
+						// 				.css('top', '');
+						// 		else
+						// 			$sidebar_inner
+						// 				.css('top', -1 * x);
+            //
+						// 	}
+						// 	else {
+            //
+						// 		if (y > 0)
+						// 			$sidebar_inner
+						// 				.data('locked', 1)
+						// 				.css('position', 'fixed')
+						// 				.css('top', -1 * x);
+            //
+						// 	}
 
 					})
 					.on('resize.sidebar-lock', function() {
 
-						// Calculate heights.
-							wh = $window.height();
-							sh = $sidebar_inner.outerHeight() + 30;
-
-						// Trigger scroll.
-							$window.trigger('scroll.sidebar-lock');
+						// // Calculate heights.
+						// 	wh = $window.height();
+						// 	sh = $sidebar_inner.outerHeight() + 30;
+            //
+						// // Trigger scroll.
+						// 	$window.trigger('scroll.sidebar-lock');
 
 					})
-					.trigger('resize.sidebar-lock');
+					// .trigger('resize.sidebar-lock');
 
 				});
 
