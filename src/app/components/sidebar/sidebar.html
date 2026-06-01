@@ -16,7 +16,7 @@
       <ul>
         <li><a routerLink="/home">Homepage</a></li>
         <li><a routerLink="/article">Generic</a></li>
-        <li><a href="elements.html">Elements</a></li>
+        <li><a routerLink="/about">About</a></li>
         <li>
           <span class="opener"
                 [class.active]="openMenus.has('submenu1')"
@@ -28,22 +28,7 @@
             <li><a href="#">Feugiat Veroeros</a></li>
           </ul>
         </li>
-        <li><a href="#">Etiam Dolore</a></li>
-        <li><a href="#">Adipiscing</a></li>
-        <li>
-          <span class="opener"
-                [class.active]="openMenus.has('submenu2')"
-                (click)="toggleMenu('submenu2')">Another Submenu</span>
-          <ul *ngIf="openMenus.has('submenu2')">
-            <li><a href="#">Lorem Dolor</a></li>
-            <li><a href="#">Ipsum Adipiscing</a></li>
-            <li><a href="#">Tempus Magna</a></li>
-            <li><a href="#">Feugiat Veroeros</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Maximus Erat</a></li>
-        <li><a href="#">Sapien Mauris</a></li>
-        <li><a href="#">Amet Lacinia</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
       </ul>
     </nav>
 
@@ -71,19 +56,19 @@
       </ul>
     </section>
 
-    <!-- Section -->
-    <section>
-      <header class="major">
-        <h2>Get in touch</h2>
-      </header>
-      <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-      <ul class="contact">
-        <li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-        <li class="icon solid fa-phone">(000) 000-0000</li>
-        <li class="icon solid fa-home">1234 Somewhere Road #8254<br />
-          Nashville, TN 00000-0000</li>
-      </ul>
-    </section>
+<!--    &lt;!&ndash; Section &ndash;&gt;-->
+<!--    <section>-->
+<!--      <header class="major">-->
+<!--        <h2>Get in touch</h2>-->
+<!--      </header>-->
+<!--      <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>-->
+<!--      <ul class="contact">-->
+<!--        <li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>-->
+<!--        <li class="icon solid fa-phone">(000) 000-0000</li>-->
+<!--        <li class="icon solid fa-home">1234 Somewhere Road #8254<br />-->
+<!--          Nashville, TN 00000-0000</li>-->
+<!--      </ul>-->
+<!--    </section>-->
 
     <!-- Footer -->
     <footer id="footer">
