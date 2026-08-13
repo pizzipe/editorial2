@@ -2554,7 +2554,11 @@ button:disabled,
   border-top: solid 2px rgba(210, 215, 217, 0.75);
 }
 
-#main > .inner app-banner section, #main > .inner app-article section, #main > .inner app-about section, #main > .inner app-contact section { /*  FIXME */
+#main > .inner app-banner section,
+#main > .inner app-article section,
+#main > .inner app-about section,
+#main > .inner app-contact section,
+#main > .inner app-categories section { /*  FIXME */
   border-top: 0 !important;
 }
 
